@@ -1,0 +1,260 @@
+/* || RESET */
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+} 
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --DARK-COLOR: #265037;
+  --LIGHT-COLOR: #DCE4CF;
+  --SHADOW-COLOR: rgba(0, 0, 0, 0.9);
+
+  /* FONTS */
+  --MAIN-FONTS:'Courier New', Courier, monospace;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-family: var(--MAIN-FONTS);
+  font-size: 2rem;
+ }
+
+/* || HEADER STYLES */
+header {
+  background-color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
+  display: inline-block;
+  padding: 10px;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  font-size: 25px;
+  z-index: 1000;
+ }
+ 
+.mainheader img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 40px;
+ }
+ 
+h1 {
+  position: absolute;
+ }
+ 
+.menu-container {
+  z-index: 1000;
+  display: flex;
+  justify-content: right;
+ }
+ 
+ul {
+  margin-right: 0;
+  padding: 0.5rem;
+ }
+ 
+li {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-evenly;
+  padding-inline: 0.5rem;
+  margin-right: 0;
+ }
+ 
+li a:any-link {
+  justify-content: space-evenly;
+  color: var(--LIGHT-COLOR);
+  text-decoration: none;
+ }
+ 
+li a:hover,
+li a:focus {
+  font-weight: bolder;
+  border-bottom: 1.5px solid var(--LIGHT-COLOR);
+ }
+
+
+/* || MAIN STYLES */
+.main-container {
+ background-image: url(img/tacos_delicioso_1000x667.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center left;
+ height: 150vh;
+}
+
+.main-header {
+ font-size: 50px;
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ padding-top: 120px;
+ color: var(--LIGHT-COLOR);
+ text-shadow: 2px 2px 6px var(--SHADOW-COLOR);
+ z-index: 0;
+}
+
+/* || MENU STYLES */
+.main-tab {
+ background-color: var(--LIGHT-COLOR);
+ width: 800px;
+ height: 100vh;
+ margin: 0 auto;
+ margin-top: 100px;
+ color: var(--DARK-COLOR)
+ ;
+}
+
+.image-container1 img {
+ width: 120px;
+ height: 100px;
+ margin-top: 80px;
+ margin-left: 40px;
+}
+
+.item-info1 {
+ margin-top: 80px;
+ margin-right: 420px;
+ font-size: 15px;
+ text-align: right;
+ line-height: 30px;
+ font-weight: 900;
+}
+
+.first-item {
+ display: flex;
+ justify-content: space-between;
+}
+
+.image-container2 img {
+ width: 120px;
+ height: 100px;
+ margin-top: 20px;
+ margin-left: 40px;
+}
+
+.item-info2 {
+ margin-top: -110px;
+ margin-right: 430px;
+ font-size: 15px;
+ text-align: right;
+ line-height: 30px;
+ font-weight: 900;
+}
+
+.image-container3 img {
+  width: 120px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.item-info3 {
+  margin-top: -110px;
+  margin-right: 420px;
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  font-weight: 900;
+}
+
+.image-container4 img {
+  width: 120px;
+  height: 100px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.item-info4 {
+  margin-top: -110px;
+  margin-left: 200px;
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  width: 20ch;
+  font-weight: 900;
+}
+
+.fifth-item {
+  display: flex;
+  justify-content: right;
+  margin-top: -485px;
+}
+
+.image-container5 img {
+  width: 120px;
+  height: 100px;
+  margin-right: 30px;
+}
+
+.item-info5 {
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  margin-right: 35px;
+  font-weight: 900;
+}
+
+.sixth-item {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.image-container6 img {
+  width: 120px;
+  height: 100px;
+  margin-right: 90px;
+}
+
+.item-info6 {
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  margin-right: 40px;
+  font-weight: 900;
+}
+
+.seventh-item {
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+}
+
+.image-container7 img {
+  width: 120px;
+  height: 100px;
+  margin-right: 110px;
+}
+
+.item-info7 {
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  margin-right: 40px;
+  font-weight: 900;
+}
+
+.eighth-item {
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+}
+
+.image-container8 img {
+  width: 120px;
+  height: 100px;
+  margin-right: 115px;
+}
+
+.item-info8 {
+  font-size: 15px;
+  text-align: right;
+  line-height: 25px;
+  margin-right: 45px;
+  font-weight: 900;
+}

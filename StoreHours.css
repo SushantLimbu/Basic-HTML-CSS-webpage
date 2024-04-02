@@ -1,0 +1,214 @@
+/* || RESET */
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+} 
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --DARK-COLOR: #265037;
+  --LIGHT-COLOR: #DCE4CF;
+  --BG-COLOR: rgba(220, 228, 207, 0.5);
+
+  /* FONTS */
+  --MAIN-FONT: 'Courier New', Courier, monospace;
+  --SUB-FONT: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+/* || GENERAL STYLES */
+html {
+  font-family: var(--MAIN-FONT);
+  font-size: 2rem;
+ }
+
+/* || HEADER STYLES */
+header {
+  background-color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
+  display: inline-block;
+  padding: 10px;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  font-size: 25px;
+ }
+ 
+.mainheader img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 40px;
+ }
+ 
+h1 {
+  position: absolute;
+ }
+ 
+.menu-container {
+  z-index: 1000;
+  display: flex;
+  justify-content: right;
+ }
+ 
+ul {
+  margin-right: 0;
+  padding: 0.5rem;
+ }
+ 
+li {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-evenly;
+  padding-inline: 0.5rem;
+  margin-right: 0;
+ }
+ 
+li a:any-link {
+  justify-content: space-evenly;
+  color: var(--LIGHT-COLOR);
+  text-decoration: none;
+ }
+ 
+li a:hover,
+li a:focus {
+  font-weight: bolder;
+  border-bottom: 1.5px solid var(--LIGHT-COLOR);
+}
+
+/* || BODY STYLES */
+body {
+ background-image: url(img/taco-background.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+section {
+ display: flex;
+ justify-content: center;
+}
+
+/*|| TITLE STYLES */
+.main-title {
+ margin-top: 150px;
+}
+
+.main-title h1 {
+ text-align: center;
+ font-size: 1.5rem;
+ line-height: 5px;
+ padding-left: 70px;
+ font-family: var(--SUB-FONT);
+ color: var(--DARK-COLOR);
+ text-decoration: 5px underline;
+}
+
+.main-title h2 {
+ text-align: center;
+ font-family: monospace;
+ font-style: oblique;
+ color: var(--DARK-COLOR);
+}
+
+/* || TIME BLOCK */
+.opening-hours {
+ background-color: var(--DARK-COLOR);
+ width: 550px;
+ height: 570px;
+ display: flex;
+ justify-content: center;
+ margin-left: 70px;
+ margin-bottom: 50px;
+ margin-top: 50px;
+}
+
+.opening-hours h2 {
+ text-align: center;
+ padding-left: 20px;
+ padding-top: 20px;
+ background-color: var(--LIGHT-COLOR);
+ padding-right: 20px;
+ color: var(--DARK-COLOR);
+}
+
+.time-block {
+ display: block;
+ margin-top: 100px;
+ padding-right: 20px;
+}
+
+.time-block h3 {
+background-color: var(--LIGHT-COLOR);
+width: 425px;
+color: var(--DARK-COLOR);
+}
+
+.time-block ul {
+ color: var(--LIGHT-COLOR);
+ font-size: 25px;
+ text-align: left;
+ line-height: 50px;
+}
+
+/* || RESERVATION FORM */
+main {
+ display: flex;
+ justify-content: space-between;
+}
+
+.reservation-form {
+ margin-top: 50px;
+ margin-right: 300px;
+ color: var(--DARK-COLOR);
+ padding-left: 30px;
+}
+
+label {
+ font-family: var(--SUB-FONT);
+ background-color: var(--BG-COLOR);
+}
+
+.reservation-form input {
+ border: 1px solid var(--DARK-COLOR);
+ background-color: var(--LIGHT-COLOR);
+ padding: 10px 20px;
+ width: 300px;
+ height: 50px;
+ color: var(--DARK-COLOR);
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.column-2 {
+ padding-left: 30px;
+}
+
+button {
+ position: relative;
+ margin-top: 50px;
+ background-color: var(--LIGHT-COLOR);
+ border-color: var(--DARK-COLOR);
+ color: var(--DARK-COLOR);
+ border-radius: 0;
+ font-weight: 900;
+ border-width: 2px;
+ font-style: normal;
+ letter-spacing: 2px;
+ margin: .4rem .8rem;
+ white-space: normal;
+ transition: all 0.3s ease-in-out;
+ border-radius: 0px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ word-break: break-word;
+ width: 150px;
+ height: 50px;
+ margin-left: -2px;
+}
+ button:hover {
+  background-color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
+  transition: all 0.3s ease-in-out;
+ }

@@ -1,0 +1,120 @@
+ /* || RESET */
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+ 
+/* || VARIABLES */
+:root {
+  /* Colors */
+  --dark-color: #265037;
+  --light-color: #DCE4CF;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  /* Fonts */
+  --main-font: 'Courier New', Courier, monospace;
+  /* Sizes */
+  --font-size-large: 2rem;
+  --font-size-medium: 25px;
+  --font-size-small: 16px;
+ }
+ 
+ /* || BASE STYLES */
+ html {
+  font-family: var(--main-font);
+  font-size: var(--font-size-large);
+ }
+ 
+ body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+ }
+ 
+ /* || HEADER STYLES */
+ header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  display: inline-block;
+  padding: 10px;
+  position: fixed;
+  line-height: 60px;
+  width: 100%;
+  font-size: var(--font-size-medium);
+  z-index: 1000;
+ }
+ 
+ .mainheader img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 40px;
+ }
+ 
+ h1 {
+  position: absolute;
+ }
+
+ .menu-container {
+  z-index: 1000;
+  display: flex;
+  justify-content: right;
+ }
+ 
+ ul {
+  margin-right: 0;
+  padding: 0.5rem;
+ }
+ 
+ li {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-evenly;
+  padding-inline: 0.5rem;
+  margin-right: 0;
+ }
+ 
+ li a:any-link {
+  justify-content: space-evenly;
+  color: var(--light-color);
+  text-decoration: none;
+ }
+ 
+ li a:hover,
+ li a:focus {
+  font-weight: bolder;
+  border-bottom: 1.5px solid var(--light-color);
+ }
+ 
+ /* || BANNER STYLES */
+ .banner-container {
+  background-image: url(img/tacos_and_drink_1000x667.png);
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -300px;
+  height: 450px;
+ }
+ 
+ .title-container {
+  font-size: 50px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: var(--light-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  z-index: 0;
+ }
+ 
+ /* || PARAGRAPH STYLES */
+ .header-container {
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 10px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+ }
+ 
+ .paragraph-container {
+  text-align: center;
+  padding: 10px 60px 30px;
+ }
